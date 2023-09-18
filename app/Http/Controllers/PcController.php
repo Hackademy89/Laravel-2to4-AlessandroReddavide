@@ -29,13 +29,16 @@ class PcController extends Controller
             'img' => '/img/ryzen.jpg',
         ],
     ];
-
+    
+    // call back index
     public function index(){
         return view('pc',[
             'computers' => $this->computers
         ]);
     }
+    
 
+    // call back rottaparametrica
     public function show($title){
     foreach($this->computers as $computer){
 
