@@ -13,14 +13,7 @@
   
   @foreach($monitors as $monitor)
    <div class="col-4 d-flex justify-content-evenly">
-     <div class="card" style="width: 18rem;">
-       <img src="{{$monitor ['img'] }}" class="card-img-top" alt="...">
-         <div class="card-body">
-           <h5 class="card-title">{{$monitor ['title'] }}</h5>
-           <p class="card-text">{{$monitor ['specific'] }}</p>
-           <a href="{{ route('show.monitor', ['title'=>$monitor['title']]) }}" class="btn btn-primary">Guarda</a>
-         </div>
-      </div>
+    <x-card title="{{$monitor['title']}}" img="{{$monitor['img']}}" specific="{{$monitor['specific']}}" route="show.monitor" /> 
    </div>
    @endforeach
    

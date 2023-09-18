@@ -12,7 +12,7 @@
   
   @foreach($computers as $computer)
    <div class="col-4 d-flex justify-content-evenly">
-      <x-card title="{{$computer['title']}}" img="{{$computer['img']}}" specific="{{$computer['specific']}}" /> 
+      <x-card title="{{$computer['title']}}" img="{{$computer['img']}}" specific="{{$computer['specific']}}" route="show.pc" /> 
       {{-- <x-card :data="$computer" /> --}}
    </div>
    @endforeach

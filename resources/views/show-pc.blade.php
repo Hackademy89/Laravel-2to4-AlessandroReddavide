@@ -10,17 +10,8 @@
 
   <div class="row">
     <div class="col-12 d-flex flex-column justfify-content-center align-items-center">
-
-      <div class="card mb-3">
-        <img src="{{$computer['img']}}" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">{{$computer['title']}}</h5>
-          <p class="card-text">{{$computer['specific']}}</p>
-          <p class="card-text">{{$computer['description']}}</p>
-          <p class="card-text">{{$computer['price']}}</p>
-        </div>
+      <x-cardshow title="{{$computer['title']}}" img="{{$computer['img']}}" specific="{{$computer['specific']}}" price="{{$computer['price']}}" description="{{$computer['description']}}"  /> 
       </div>
-    </div>
 
   </div>
 </div>
