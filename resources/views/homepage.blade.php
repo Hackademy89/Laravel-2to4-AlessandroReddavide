@@ -1,9 +1,4 @@
 <x-layout title="Homepage">
-    <!-- Intestazione -->
-    <header>
-        <h1 class="animated-title">Benvenuti nella nostra Homepage</h1>
-    </header>
-
     <!-- Contenuto principale -->
     <section class="content">
         <section class="section">
@@ -24,16 +19,14 @@
 
     <!-- Contenuto principale -->
     <main class="content">
-        <!-- Carosello dei prodotti in saldo -->
-        <div class="sale-products-carousel">
             {{-- Creazione card saldo --}}
             <div class="row">
 
                 @foreach ($salesproducts as $salesproduct)
-                    
+                <x-card title="{{$salesproduct['title']}}" img="{{$salesproduct['img']}}" specific="{{$salesproduct['specific']}}"/> 
+
                 @endforeach
             </div>
-        </div>
     </main>
 
 

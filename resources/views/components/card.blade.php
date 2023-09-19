@@ -3,6 +3,6 @@
       <div class="card-body">
         <h5 class="card-title">{{ $title }}</h5>
         <p class="card-text">{{ $specific }}</p>
-        <a href="{{ route($route, ['title'=> $title]) }}" class="btn btn-primary">Guarda</a>
+        {{-- <a href="{{ route($route, ['title'=> $title]) }}" class="btn btn-primary">Guarda</a> --}}
       </div>
    </div>

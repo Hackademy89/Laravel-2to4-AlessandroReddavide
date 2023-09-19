@@ -1,13 +1,8 @@
-/* Stile per l'intestazione con !important */
-header {
-    background-color: #333 !important; /* Colore di sfondo scuro */
-    color: #fff !important;
-    text-align: center !important;
-    padding: 20px !important;
-    border-radius: 10px !important;
+/* GENERAL SETTING */
+body{
+    background-color: #111;
 }
 
-/* Stile per il titolo con !important */
 h1 {
     font-size: 48px !important;
     margin-bottom: 20px !important;
@@ -15,7 +10,7 @@ h1 {
     animation: fadeInDown 2s ease !important;
 }
 
-/* Stile per le sezioni con !important */
+/* sezioni */
 .content {
     display: flex; 
     flex-wrap: wrap;
@@ -26,32 +21,33 @@ h1 {
 }
 
 .section {
-    flex: 0 0 calc(33.33% - 20px) !important; /* Tre sezioni per riga con margine tra loro */
-    margin: 0 10px 20px 10px !important;
-    padding: 20px !important;
-    border-radius: 10px !important;
-    background-color: #222 !important; /* Colore di sfondo ancora più scuro */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important; /* Ombra più evidente */
-    text-align: left !important;
-    animation: fadeInUp 2s ease !important;
-    box-sizing: border-box !important;
+    min-height: 180px;
+    flex: 0 0 calc(33.33% - 20px); 
+    margin: 0 10px 20px 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #222;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: left ;
+    animation: fadeInUp 2s ease;
+    box-sizing: border-box;
 }
 
-/* Stile per il titolo delle sezioni */
+/*  titolo delle sezioni */
 .section h2 {
     font-size: 28px !important;
     margin-bottom: 10px !important;
     color: #fff !important; /* Testo bianco */
 }
 
-/* Stile per il testo delle sezioni */
+/* testo delle sezioni */
 .section p {
     font-size: 18px !important;
     line-height: 1.5 !important;
     color: #ccc !important; 
 }
 
-/* Animazione per il titolo */
+/* Animazione titolo */
 @keyframes fadeInDown {
     from {
         opacity: 0;
@@ -63,7 +59,7 @@ h1 {
     }
 }
 
-/* Animazione per le sezioni */
+/* Animazione sezioni */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -77,57 +73,38 @@ h1 {
 
 /*--------------------------------------------------------------------------------------------*/
 
-/* Stile per il carosello */
+/*card xcard */
 
-.sale-products-carousel {
-    display: flex;
-    overflow: hidden;
-    justify-content: center; /* Centro gli elementi del carosello */
-    position: relative; /* Posizione relativa per l'animazione di scorrimento */
-}
 
-.cardcarousel {
-    flex: 0 0 calc(33.33% - 20px);
+.card {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    min-width: 120px;
+    min-height: 190px;
     margin: 0 10px;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: #333;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    opacity: 0; /* Inizialmente invisibile */
-    transition: opacity 0.5s ease-in-out; /* Animazione di opacità */
+}
+.card-img-top{
+    min-height: 180px;
+    max-height: 250px;
 }
 
-.cardcarousel img {
-    max-width: 100%;
-    height: auto;
+.card-body{
+    color: whitesmoke;
 }
-
-.cardcarousel h3 {
-    font-size: 18px;
-    margin: 10px 0;
-    color: #333;
-}
-
-.cardcarousel p {
-    font-size: 16px;
-    color: #777;
-}
-
-
-
-
-
-
 
 /*--------------------------------------------------------------------------------------------*/
 
-/* Stile per il footer */
+/* footer */
 footer {
     background-color: #333 !important; /* Colore di sfondo scuro per il footer */
     color: #fff !important;
     text-align: center !important;
     padding: 20px 0 !important;
     border-radius: 10px !important;
+    margin-top: 100px;
 }
 
 /* Stile per il footer-content */
