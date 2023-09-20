@@ -4,7 +4,7 @@
 <div class="container my-5">
   <div class="row ">
     <div class="col-12 d-flex flex-column justfify-content-center align-items-center">
-      <h1 class="textcenter">Selezione Monitor</h1>
+      <h2 class="neon-title">La nostra selezione di monitor</h2>
     </div>
   </div>
 </div>

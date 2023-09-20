@@ -4,7 +4,7 @@
 
   <div class="row ">
     <div class="col-12 d-flex flex-column justfify-content-center align-items-center">
-      <h1 class="textcenter">{{$computer['title']}}</h1>
+      <h2 class="neon-title">{{$computer['title']}}</h2>
     </div>
   </div>
 
